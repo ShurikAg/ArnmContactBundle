@@ -1,0 +1,27 @@
+contact:
+    pattern:  /contact
+    defaults: { _controller: ArnmContactBundle:Contact:index }
+    
+contact_sent:
+    pattern:  /contact/sent
+    defaults: { _controller: ArnmContactBundle:Contact:index, submitted: true }
+
+arnm_contact_request_types:
+    pattern:  /araneum/contact/request/types
+    defaults: { _controller: ArnmContactBundle:RequestType:index }
+arnm_contact_request_type_new:
+    pattern:  /araneum/contact/request/type/new
+    defaults: { _controller: ArnmContactBundle:RequestType:new }
+arnm_contact_request_type_edit:
+    pattern:  /araneum/contact/request/type/{id}/edit
+    defaults: { _controller: ArnmContactBundle:RequestType:edit }
+arnm_contact_request_type_delete:
+    pattern:  /araneum/contact/request/type/{id}/delete
+    defaults: { _controller: ArnmContactBundle:RequestType:delete }
+    
+arnm_contact_details:
+    pattern:  /araneum/contact/details
+    defaults: { _controller: ArnmContactBundle:ContactDetails:edit }
+arnm_contact_settings:
+    pattern:  /araneum/contact/settings
+    defaults: { _controller: ArnmContactBundle:Settings:edit }

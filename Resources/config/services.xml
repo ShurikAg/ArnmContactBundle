@@ -1,0 +1,19 @@
+<?xml version="1.0" ?>
+
+<container xmlns="http://symfony.com/schema/dic/services"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://symfony.com/schema/dic/services http://symfony.com/schema/dic/services/services-1.0.xsd">
+
+    <parameters>
+        <parameter key="arnm_contact.manager.class">Arnm\ContactBundle\Service\ContactManager</parameter>
+    </parameters>
+
+    <services>
+        <service id="arnm_contact.manager" class="%arnm_contact.manager.class%">
+            <argument type="service" id="arnm_config.manager" />
+            <argument type="service" id="mailer" />
+            <argument type="service" id="translator" />
+            <argument type="service" id="templating" />
+        </service>
+    </services>
+</container>

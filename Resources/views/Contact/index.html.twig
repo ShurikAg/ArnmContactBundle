@@ -1,0 +1,45 @@
+{% extends 'ArnmJuvelistoBundle::site.base.html.twig' %}
+
+{% form_theme form 'ArnmAraneumBundle:Form:araneum.html.twig' %}
+
+{% block title %}{% endblock %}
+{% block description %}{% endblock %}
+{% block keywords %}{% endblock %}
+
+
+{% block content %}
+<div class="row">
+	<div class="span4 contact-info">
+		<address>
+		  <strong>Juvelisto</strong><br>
+		  {{ details.address1 }}<br>
+		  {% if details.address2|length > 0 %}
+		  	{{ details.address2 }}<br>
+		  {% endif %}
+		  {{ details.city }}, {{ details.state }} {{ details.zip }}
+	  </address>
+	  
+	  <address>
+		  {{ details.phone }}<br>
+		  <a href="mailto:{{ details.email }}">{{ details.email }}</a>
+	  </address>
+	</div>
+	<div class="span8 pull-right contact-form">
+		{% if submitted %}
+			<p class="confirmation-message">
+				{{ 'contact.request.submittion.confirmation'|trans({}, 'contact')|raw }}
+			</p>
+		{% else %}
+			<form action="{{ path('contact') }}" method="post" {{ form_enctype(form) }} class="form-horizontal">
+				<fieldset>
+					{{ form_widget(form) }}
+					<div class="form-controls">
+				    	<input class="button" type="submit" value="{{ 'contact.request.form.action.send'|trans({}, 'contact') }}"/>
+				    	<input class="button" type="reset" value="{{ 'default.form.action.reset'|trans }}"/>
+				    </div>
+			    </fieldset>
+			</form>
+		{% endif %}
+	</div>
+</div>
+{% endblock %}

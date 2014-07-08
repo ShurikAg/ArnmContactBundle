@@ -1,0 +1,247 @@
+<?xml version="1.0"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+    <file source-language="en" datatype="plaintext" original="contact.en.xlf">
+        <body>
+            <trans-unit id="1">
+                <source>contact.request_type.list.info</source>
+                <target><![CDATA[<p>This sections allows to configure contact request types.</p><p>These types will be shown in the contact form to the user.</p>]]></target>
+            </trans-unit>
+            <trans-unit id="2">
+                <source>contact.request_type.list.title</source>
+                <target>Request Types List</target>
+            </trans-unit>
+            <trans-unit id="3">
+                <source>contact.request_type.list.table.head.type</source>
+                <target>Type</target>
+            </trans-unit>
+            <trans-unit id="4">
+                <source>contact.request_type.list.table.head.active</source>
+                <target>Active</target>
+            </trans-unit>
+            <trans-unit id="5">
+                <source>contact.request_type.list.action.create_new</source>
+                <target>Add New Type</target>
+            </trans-unit>
+            <trans-unit id="6">
+                <source>contact.request_type.message.create.success</source>
+                <target>New request type has been created successfully</target>
+            </trans-unit>
+            <trans-unit id="7">
+                <source>contact.request_type.form.type.label</source>
+                <target>Type</target>
+            </trans-unit>
+            <trans-unit id="8">
+                <source>contact.request_type.form.type.help</source>
+                <target>The text of the type how it's going to be presented to user.</target>
+            </trans-unit>
+            <trans-unit id="9">
+                <source>contact.request_type.form.active.label</source>
+                <target>Active</target>
+            </trans-unit>
+            <trans-unit id="10">
+                <source>contact.request_type.form.active.help</source>
+                <target>Whether or not this type is active</target>
+            </trans-unit>
+            <trans-unit id="11">
+                <source>contact.request_type.new.info</source>
+                <target><![CDATA[<p>Fill in the form to create new request type.</p><p>Request type is a simple way to categorize requests.</p>]]></target>
+            </trans-unit>
+            <trans-unit id="12">
+                <source>contact.request_type.form.title.new</source>
+                <target>New Request Type</target>
+            </trans-unit>
+            <trans-unit id="13">
+                <source>contact.request_type.form.action.create</source>
+                <target>Create</target>
+            </trans-unit>
+            <trans-unit id="14">
+                <source>contact.request_type.edit.info</source>
+                <target><![CDATA[<p>Fill free to update details of request type at any point.</p>]]></target>
+            </trans-unit>
+            <trans-unit id="15">
+                <source>contact.request_type.form.title.edit</source>
+                <target>Edit Request Type</target>
+            </trans-unit>
+            <trans-unit id="16">
+                <source>contact.request_type.form.action.update</source>
+                <target>Update</target>
+            </trans-unit>
+            <trans-unit id="17">
+                <source>contact.request_type.message.update.success</source>
+                <target>This request type has been updated successfully</target>
+            </trans-unit>
+            <trans-unit id="18">
+                <source>contact.request_type.delete.confirm_message</source>
+                <target>Are you sure you want to delete this request type?</target>
+            </trans-unit>
+            <trans-unit id="19">
+                <source>catalog.category.message.delete.fail.requests_exists</source>
+                <target>Reuqest type with existing requests cannot be deleted?</target>
+            </trans-unit>
+            <trans-unit id="20">
+                <source>contact.request_type.message.delete.success</source>
+                <target>Reuqest type has been deleted successfully</target>
+            </trans-unit>
+            <trans-unit id="21">
+                <source>contact.details.info</source>
+                <target><![CDATA[<p>This section allows to manage Contact details which are shown in the contact page.</p><p>All the fields are optional. The page eventually will adopt whatever is given.</p>]]></target>
+            </trans-unit>
+            <trans-unit id="22">
+                <source>contact.details.title</source>
+                <target>Contact Details</target>
+            </trans-unit>
+            <trans-unit id="23">
+                <source>contact.details.form.action.update</source>
+                <target>Update</target>
+            </trans-unit>
+            <trans-unit id="24">
+                <source>contact.details.form.address1.label</source>
+                <target>Address 1</target>
+            </trans-unit>
+            <trans-unit id="25">
+                <source>contact.details.form.address1.help</source>
+                <target>First line of an address</target>
+            </trans-unit>
+            <trans-unit id="26">
+                <source>contact.details.form.address2.label</source>
+                <target>Address 2</target>
+            </trans-unit>
+            <trans-unit id="27">
+                <source>contact.details.form.address2.help</source>
+                <target>Second line of an address</target>
+            </trans-unit>
+            <trans-unit id="28">
+                <source>contact.details.form.city.label</source>
+                <target>City</target>
+            </trans-unit>
+            <trans-unit id="29">
+                <source>contact.details.form.city.help</source>
+                <target>Name of a city</target>
+            </trans-unit>
+            <trans-unit id="30">
+                <source>contact.details.form.state.label</source>
+                <target>State/Province</target>
+            </trans-unit>
+            <trans-unit id="31">
+                <source>contact.details.form.state.help</source>
+                <target>State or Province, whichever applies</target>
+            </trans-unit>
+            <trans-unit id="32">
+                <source>contact.details.form.country.label</source>
+                <target>Country</target>
+            </trans-unit>
+            <trans-unit id="33">
+                <source>contact.details.form.country.help</source>
+                <target>Country</target>
+            </trans-unit>
+            <trans-unit id="34">
+                <source>contact.details.form.zip.label</source>
+                <target>Zip/Postal</target>
+            </trans-unit>
+            <trans-unit id="35">
+                <source>contact.details.form.zip.help</source>
+                <target>Zip/Postal code</target>
+            </trans-unit>
+            <trans-unit id="36">
+                <source>contact.details.form.phone.label</source>
+                <target>Phone</target>
+            </trans-unit>
+            <trans-unit id="37">
+                <source>contact.details.form.phone.help</source>
+                <target>Phone number</target>
+            </trans-unit>
+            <trans-unit id="38">
+                <source>contact.details.form.email.label</source>
+                <target>Email</target>
+            </trans-unit>
+            <trans-unit id="39">
+                <source>contact.details.form.email.help</source>
+                <target>Valid email address</target>
+            </trans-unit>
+            <trans-unit id="40">
+                <source>contact.details.message.update.success</source>
+                <target>Contact details has been updated successfully.</target>
+            </trans-unit>
+            <trans-unit id="41">
+                <source>contact.request.form.name.label</source>
+                <target>Name</target>
+            </trans-unit>
+            <trans-unit id="42">
+                <source>contact.request.form.name.help</source>
+                <target>Name</target>
+            </trans-unit>
+            <trans-unit id="43">
+                <source>contact.request.form.email.label</source>
+                <target>E-mail</target>
+            </trans-unit>
+            <trans-unit id="44">
+                <source>contact.request.form.email.help</source>
+                <target>Valid email</target>
+            </trans-unit>
+            <trans-unit id="45">
+                <source>contact.request.form.subject.label</source>
+                <target>Subject</target>
+            </trans-unit>
+            <trans-unit id="46">
+                <source>contact.request.form.subject.help</source>
+                <target>Subject</target>
+            </trans-unit>
+            <trans-unit id="47">
+                <source>contact.request.form.message.label</source>
+                <target>Content</target>
+            </trans-unit>
+            <trans-unit id="48">
+                <source>contact.request.form.message.help</source>
+                <target>Message to be sent</target>
+            </trans-unit>
+            <trans-unit id="49">
+                <source>contact.request.form.action.send</source>
+                <target>Send</target>
+            </trans-unit>
+            <trans-unit id="50">
+                <source>contact.details.form.sendNewContactNotification.label</source>
+                <target>Notify by Email</target>
+            </trans-unit>
+            <trans-unit id="51">
+                <source>contact.details.form.sendNewContactNotification.help</source>
+                <target>Whether or not to send notification about new request by email.</target>
+            </trans-unit>
+            <trans-unit id="52">
+                <source>contact.details.form.name.label</source>
+                <target>Recipient Name</target>
+            </trans-unit>
+            <trans-unit id="53">
+                <source>contact.details.form.name.help</source>
+                <target>Name to whom the notification will be addressed</target>
+            </trans-unit>
+            <trans-unit id="54">
+                <source>contact.details.form.email.label</source>
+                <target>Recipient Email</target>
+            </trans-unit>
+            <trans-unit id="55">
+                <source>contact.details.form.email.help</source>
+                <target>Email address to send the notification to.</target>
+            </trans-unit>
+            <trans-unit id="56">
+                <source>contact.settings.form.action.update</source>
+                <target>Save</target>
+            </trans-unit>
+            <trans-unit id="57">
+                <source>contact.settings.message.update.success</source>
+                <target>Settings have been updated successfully.</target>
+            </trans-unit>
+            <trans-unit id="58">
+                <source>contact.settings.info</source>
+                <target><![CDATA[<p>Some functional configurations can be made here.</p>]]></target>
+            </trans-unit>
+            <trans-unit id="59">
+                <source>contact.settings.title</source>
+                <target>Contact Config Admin</target>
+            </trans-unit>
+            <trans-unit id="60">
+                <source>contact.request.submittion.confirmation</source>
+                <target><![CDATA[We appreciate your interest.<br/>Your request has been received.<br/>We will contact you as soon as possible!]]></target>
+            </trans-unit>
+        </body>
+    </file>
+</xliff>
