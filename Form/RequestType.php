@@ -17,7 +17,7 @@ class RequestType extends AbstractType
         'attr' => array(
             'rel' => 'tooltip',
             'title' => 'contact.request.form.name.help',
-            'class' => 'span4'
+            'class' => 'form-control'
         ),
         'translation_domain' => 'contact',
         'required' => false
@@ -27,7 +27,7 @@ class RequestType extends AbstractType
         'attr' => array(
             'rel' => 'tooltip',
             'title' => 'contact.request.form.email.help',
-            'class' => 'span4'
+            'class' => 'form-control'
         ),
         'translation_domain' => 'contact',
         'required' => false
@@ -37,7 +37,7 @@ class RequestType extends AbstractType
         'attr' => array(
             'rel' => 'tooltip',
             'title' => 'contact.request.form.subject.help',
-            'class' => 'span5 subject'
+            'class' => 'form-control'
         ),
         'translation_domain' => 'contact',
         'required' => false
@@ -47,7 +47,7 @@ class RequestType extends AbstractType
         'attr' => array(
             'rel' => 'tooltip',
             'title' => 'contact.request.form.message.help',
-            'class' => 'span5 message'
+            'class' => 'form-control'
         ),
         'translation_domain' => 'contact',
         'required' => false

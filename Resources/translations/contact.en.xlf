@@ -188,7 +188,7 @@
             </trans-unit>
             <trans-unit id="47">
                 <source>contact.request.form.message.label</source>
-                <target>Content</target>
+                <target>Message</target>
             </trans-unit>
             <trans-unit id="48">
                 <source>contact.request.form.message.help</source>
@@ -240,7 +240,7 @@
             </trans-unit>
             <trans-unit id="60">
                 <source>contact.request.submittion.confirmation</source>
-                <target><![CDATA[We appreciate your interest.<br/>Your request has been received.<br/>We will contact you as soon as possible!]]></target>
+                <target><![CDATA[Your request has been received.<br/>We will contact you as soon as possible!]]></target>
             </trans-unit>
         </body>
     </file>
