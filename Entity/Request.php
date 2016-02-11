@@ -3,15 +3,23 @@ namespace Arnm\ContactBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
 use Gedmo\Mapping\Annotation as Gedmo;
+use Gedmo\SoftDeleteable\Traits\SoftDeleteableEntity;
+use Gedmo\Timestampable\Traits\TimestampableEntity;
+use Gedmo\Blameable\Traits\BlameableEntity;
 use Symfony\Component\Validator\Constraints as Assert;
 /**
  * Arnm\ContactBundle\Entity\Request
  *
  * @ORM\Table(name="request")
  * @ORM\Entity(repositoryClass="Arnm\ContactBundle\Entity\RequestRepository")
+ * @Gedmo\SoftDeleteable(fieldName="deletedAt", timeAware=false)
+ * @Gedmo\Loggable
  */
 class Request
 {
+    use SoftDeleteableEntity;
+    use TimestampableEntity;
+    use BlameableEntity;
 
     const STATUS_NEW = 'new';
     const STATUS_READ = 'read';
@@ -28,6 +36,7 @@ class Request
      * @var string $name
      *
      * @ORM\Column(name="name", type="string", length=255)
+     * @Gedmo\Versioned
      *
      * @Assert\NotBlank()
      * @Assert\Type(type="string", message="The value {{ value }} is not a valid {{ type }}.")
@@ -38,6 +47,7 @@ class Request
      * @var string $email
      *
      * @ORM\Column(name="email", type="string", length=255)
+     * @Gedmo\Versioned
      *
      * @Assert\NotBlank()
      * @Assert\Type(type="string", message="The value {{ value }} is not a valid {{ type }}.")
@@ -53,23 +63,17 @@ class Request
      * @var string $phone
      *
      * @ORM\Column(name="phone", type="string", length=255, nullable=true)
+     * @Gedmo\Versioned
      *
      * @Assert\Type(type="string", message="The value {{ value }} is not a valid {{ type }}.")
      */
     private $phone;
 
     /**
-     * @var \DateTime $created
-     *
-     * @Gedmo\Timestampable(on="create")
-     * @ORM\Column(name="created", type="datetime")
-     */
-    private $created;
-
-    /**
      * @var string $subject
      *
      * @ORM\Column(name="subject", type="string", length=255)
+     * @Gedmo\Versioned
      *
      * @Assert\NotBlank()
      * @Assert\Type(type="string", message="The value {{ value }} is not a valid {{ type }}.")
@@ -80,6 +84,7 @@ class Request
      * @var string $message
      *
      * @ORM\Column(name="message", type="string", length=1000)
+     * @Gedmo\Versioned
      *
      * @Assert\NotBlank()
      * @Assert\Type(type="string", message="The value {{ value }} is not a valid {{ type }}.")
@@ -90,6 +95,7 @@ class Request
      * @var string $status
      *
      * @ORM\Column(name="status", type="string", length=20)
+     * @Gedmo\Versioned
      */
     private $status = self::STATUS_NEW;
 
@@ -98,6 +104,7 @@ class Request
 	 *
 	 * @ORM\ManyToOne(targetEntity="RequestType", inversedBy="requests")
 	 * @ORM\JoinColumn(name="request_type_id", referencedColumnName="id", nullable=true)
+	 * @Gedmo\Versioned
 	 */
 	private $type;
 
@@ -179,29 +186,6 @@ class Request
     public function getPhone()
     {
         return $this->phone;
-    }
-
-    /**
-     * Set created
-     *
-     * @param \DateTime $created
-     * @return Request
-     */
-    public function setCreated($created)
-    {
-        $this->created = $created;
-
-        return $this;
-    }
-
-    /**
-     * Get created
-     *
-     * @return \DateTime
-     */
-    public function getCreated()
-    {
-        return $this->created;
     }
 
     /**

@@ -1,23 +1,23 @@
 {
-    "name": "iibs/arnm-contact",
-    "description": "Araneum's contact us bundle",
-    "version": "1.0.3",
-    "authors": [
-        {
-            "name": "Alex Agulyansky",
-            "email": "alex@iibspro.com",
-            "homepage": "http://www.iibspro.com",
-            "role": "Dev Lead"
-        }
-    ],
-    "autoload": {
-        "psr-0": { "Arnm\\ContactBundle": "" }
-    },
-    "target-dir": "Arnm/ContactBundle",
-    "require": {
-	"php": ">=5.3.9",
-        "symfony/symfony": "2.7.*",
-        "doctrine/orm": "~2.2,>=2.2.3,<2.5",
-        "iibs/arnm-config": "1.0.*"
+  "name" : "iibs/arnm-contact",
+  "description" : "Araneum's contact us bundle",
+  "version" : "1.0.4",
+  "require" : {
+    "php" : ">=5.3.9",
+    "symfony/symfony" : "2.7.*",
+    "doctrine/orm" : "~2.2,>=2.2.3,<2.5",
+    "iibs/arnm-config" : "1.0.*"
+  },
+  "autoload" : {
+    "psr-0" : {
+      "Arnm\\ContactBundle" : ""
     }
+  },
+  "target-dir" : "Arnm/ContactBundle",
+  "authors" : [ {
+    "name" : "Alex Agulyansky",
+    "email" : "alex@iibspro.com",
+    "homepage" : "http://www.iibspro.com",
+    "role" : "Dev Lead"
+  } ]
 }

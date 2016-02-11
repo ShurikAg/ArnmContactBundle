@@ -4,16 +4,26 @@ namespace Arnm\ContactBundle\Entity;
 use Doctrine\ORM\Mapping as ORM;
 use Symfony\Component\Validator\Constraints as Assert;
 use Symfony\Bridge\Doctrine\Validator\Constraints\UniqueEntity;
+use Gedmo\Mapping\Annotation as Gedmo;
+use Gedmo\SoftDeleteable\Traits\SoftDeleteableEntity;
+use Gedmo\Timestampable\Traits\TimestampableEntity;
+use Gedmo\Blameable\Traits\BlameableEntity;
 /**
  * Arnm\ContactBundle\Entity\RequestType
  *
  * @ORM\Table(name="request_type")
  * @ORM\Entity(repositoryClass="Arnm\ContactBundle\Entity\RequestTypeRepository")
+ * @Gedmo\SoftDeleteable(fieldName="deletedAt", timeAware=false)
+ * @Gedmo\Loggable
  *
  * @UniqueEntity("type")
  */
 class RequestType
 {
+    use SoftDeleteableEntity;
+    use TimestampableEntity;
+    use BlameableEntity;
+
     /**
      * @var integer $id
      *
@@ -27,6 +37,7 @@ class RequestType
      * @var string $type
      *
      * @ORM\Column(name="type", type="string", length=255, unique=true)
+     * @Gedmo\Versioned
      *
      * @Assert\NotBlank()
      * @Assert\Type(type="string", message="The value {{ value }} is not a valid {{ type }}.")
@@ -37,6 +48,7 @@ class RequestType
      * @var boolean $active
      *
      * @ORM\Column(name="active", type="boolean")
+     * @Gedmo\Versioned
      */
     private $active = true;
 
